@@ -1,7 +1,7 @@
-package com.taxOrbit.taxOrbitAPI.services;
+package com.tutorial.api.services;
 
-import com.taxOrbit.taxOrbitAPI.modules.TestModule;
-import com.taxOrbit.taxOrbitAPI.repositories.TestRepo;
+import com.tutorial.api.modules.TestModule;
+import com.tutorial.api.repositories.TestRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

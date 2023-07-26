@@ -1,9 +1,8 @@
-package com.taxOrbit.taxOrbitAPI.controllers;
+package com.tutorial.api.controllers;
 
-import com.taxOrbit.taxOrbitAPI.modules.TestModule;
-import com.taxOrbit.taxOrbitAPI.services.MySQLTestService;
+import com.tutorial.api.modules.TestModule;
+import com.tutorial.api.services.MySQLTestService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

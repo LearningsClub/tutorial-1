@@ -1,6 +1,6 @@
-package com.taxOrbit.taxOrbitAPI.repositories;
+package com.tutorial.api.repositories;
 
-import com.taxOrbit.taxOrbitAPI.modules.TestModule;
+import com.tutorial.api.modules.TestModule;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TestRepo extends JpaRepository<TestModule,Integer> {

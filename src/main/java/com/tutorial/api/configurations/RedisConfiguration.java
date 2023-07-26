@@ -1,4 +1,4 @@
-package com.taxOrbit.taxOrbitAPI.configurations;
+package com.tutorial.api.configurations;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

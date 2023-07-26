@@ -1,4 +1,4 @@
-package com.taxOrbit.taxOrbitAPI.modules;
+package com.tutorial.api.modules;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
