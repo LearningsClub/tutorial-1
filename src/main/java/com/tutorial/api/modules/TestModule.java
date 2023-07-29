@@ -10,7 +10,7 @@ public class TestModule {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String test;
+    private  String test;
 
     public TestModule() {
     }
