@@ -8,6 +8,6 @@ import lombok.Value;
 @Value
 public class StudentValue {
     @Id
-     int id;
+    int id;
     String username;
 }
