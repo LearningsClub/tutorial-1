@@ -8,8 +8,8 @@
 		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.taxOrbit</groupId>
-	<artifactId>taxOrbitAPI</artifactId>
+	<groupId>com.tutorial-1</groupId>
+	<artifactId>tutorial-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>taxOrbitAPI</name>
 	<description>Simplifying ITR Filing</description>

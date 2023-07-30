@@ -2,11 +2,11 @@ package com.tutorial.api.lombok;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.Value;
+import lombok.Builder;
 
 @Entity
-@Value
-public class ValueModule {
+@Builder
+public class StudentBuilder {
     @Id
     private int id;
     private String username;

@@ -2,13 +2,12 @@ package com.tutorial.api.lombok;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.NoArgsConstructor;
+import lombok.Data;
 
 @Entity
-@NoArgsConstructor
-public class NoArgsModule {
+@Data
+public class StudentData {
     @Id
     private int id;
     private String username;
-
 }

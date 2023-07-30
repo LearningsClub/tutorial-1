@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 
 @Entity
 @RequiredArgsConstructor
-public class RequiredArgsConstructorModule {
+public class StudentRequiredArgsConstructor {
     @Id
     private final int id;
     private final String username;
