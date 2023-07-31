@@ -2,11 +2,13 @@ package com.tutorial.api.lombok.modules;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.Builder;
+import lombok.AllArgsConstructor;
+import lombok.ToString;
 
 @Entity
-@Builder
-public class StudentBuilder {
+@ToString
+@AllArgsConstructor
+public class StudentToStringEx {
     @Id
     private int id;
     private String firstName;

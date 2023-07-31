@@ -2,11 +2,14 @@ package com.tutorial.api.lombok.modules;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@NoArgsConstructor
-public class StudentNoArgs {
+@Getter
+@Setter
+public class StudentGetterAndSetterEx {
+
     @Id
     private int id;
     private String firstName;
@@ -15,5 +18,4 @@ public class StudentNoArgs {
     private int mathsScore;
     private int scienceScore;
     private int englishScore;
-
 }

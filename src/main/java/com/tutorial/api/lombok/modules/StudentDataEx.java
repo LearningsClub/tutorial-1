@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class StudentData {
+public class StudentDataEx {
     @Id
     private int id;
     private String firstName;
