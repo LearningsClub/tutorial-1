@@ -17,21 +17,19 @@ public class LombokController {
 
     // API to demonstrate @AllArgsConstructor Annotation
     @PostMapping("/AllArgsConstructor")
-    public StudentAllArgsConstructor save(@RequestBody StudentPojo studentPojo)
-    {
+    public StudentAllArgsConstructor save(@RequestBody StudentPojo studentPojo) {
+        log.info("Inside save method of LombokController");
         return lombokService.saveA(studentPojo);
     }
 
     // API to demonstrate @Data Annotation
     @PostMapping("/Data")
-    public int saveD(@RequestBody StudentPojo studentPojo)
-    {
+    public int saveD(@RequestBody StudentPojo studentPojo) {
         return lombokService.saveD(studentPojo);
     }
 
     @PostMapping("/StudentValue")
-    public StudentValue saveV(@RequestBody StudentPojo studentPojo)
-    {
+    public StudentValue saveV(@RequestBody StudentPojo studentPojo) {
         return lombokService.saveV(studentPojo);
     }
 }

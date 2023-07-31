@@ -6,8 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import javax.sound.midi.SysexMessage;
-
 @Service
 @Slf4j
 public class LombokService {
@@ -18,18 +16,22 @@ public class LombokService {
         log.info("Inside studentValueObject method");
 
         // Implementation of AllArgsConstructor of @Value annotation
-        StudentValue studentValue = new StudentValue(studentPojo.getId(),studentPojo.getFirstName(),studentPojo.getLastName(),studentPojo.getRollNo(),studentPojo.getMathsScore(),studentPojo.getScienceScore(),studentPojo.getEnglishScore());
+        StudentValue studentValue = new StudentValue(studentPojo.getId(), studentPojo.getFirstName(),
+                studentPojo.getLastName(), studentPojo.getRollNo(), studentPojo.getMathsScore(),
+                studentPojo.getScienceScore(), studentPojo.getEnglishScore());
 
         // There is no method available for Updating the studentValue Object
         return studentValue;
     }
-    public StudentAllArgsConstructor saveA(@RequestBody StudentPojo studentPojo)
-    {
+
+    public StudentAllArgsConstructor saveA(@RequestBody StudentPojo studentPojo) {
         // Showcase of All Arguments Constructor
-        return new StudentAllArgsConstructor(studentPojo.getId(),studentPojo.getFirstName(),studentPojo.getLastName(),studentPojo.getRollNo(),studentPojo.getMathsScore(),studentPojo.getScienceScore(),studentPojo.getEnglishScore());
+        return new StudentAllArgsConstructor(studentPojo.getId(), studentPojo.getFirstName(), studentPojo.getLastName(),
+                studentPojo.getRollNo(), studentPojo.getMathsScore(), studentPojo.getScienceScore(),
+                studentPojo.getEnglishScore());
     }
-    public int saveD(@RequestBody StudentPojo studentPojo)
-    {
+
+    public int saveD(@RequestBody StudentPojo studentPojo) {
         // Implementation of NoArgsConstructor of @Data
         StudentData studentData = new StudentData();
 
@@ -65,22 +67,25 @@ public class LombokService {
         return getterAndSetter;
     }
 
-    public String saveTS(StudentPojo studentPojo)
-    {
-        StudentToString studentToString = new StudentToString(studentPojo.getId(),studentPojo.getFirstName(),studentPojo.getLastName(),studentPojo.getRollNo(),studentPojo.getMathsScore(),studentPojo.getScienceScore(),studentPojo.getEnglishScore());
+    public String saveTS(StudentPojo studentPojo) {
+        StudentToString studentToString = new StudentToString(studentPojo.getId(), studentPojo.getFirstName(),
+                studentPojo.getLastName(), studentPojo.getRollNo(), studentPojo.getMathsScore(),
+                studentPojo.getScienceScore(), studentPojo.getEnglishScore());
         // Showcase of toString Method
         return studentToString.toString();
     }
 
-//    public String saveB(StudentPojo studentPojo)
-//    {
-//        StudentBuilder studentBuilder;
-//        return "";
-//    }
+    // public String saveB(StudentPojo studentPojo)
+    // {
+    // StudentBuilder studentBuilder;
+    // return "";
+    // }
 
-    public StudentRequiredArgsConstructor saveRAC(StudentPojo studentPojo)
-    {
-        // Here you can see that we haven't put Student's Last Name here because that variable wasn't final.
-        return new StudentRequiredArgsConstructor(studentPojo.getId(), studentPojo.getFirstName(), studentPojo.getRollNo(),studentPojo.getMathsScore(),studentPojo.getScienceScore(),studentPojo.getEnglishScore());
+    public StudentRequiredArgsConstructor saveRAC(StudentPojo studentPojo) {
+        // Here you can see that we haven't put Student's Last Name here because that
+        // variable wasn't final.
+        return new StudentRequiredArgsConstructor(studentPojo.getId(), studentPojo.getFirstName(),
+                studentPojo.getRollNo(), studentPojo.getMathsScore(), studentPojo.getScienceScore(),
+                studentPojo.getEnglishScore());
     }
 }
