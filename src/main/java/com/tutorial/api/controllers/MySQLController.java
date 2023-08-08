@@ -12,7 +12,7 @@ public class MySQLController {
 
     @Autowired
     public MySQLTestService mySQLTestService;
-    @PostMapping("/testMySQL")
+    @PostMapping("/MySQL")
     public String test(@RequestBody TestModule testModule)
     {
         return  mySQLTestService.save(testModule);
