@@ -9,14 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MySQLController {
-
-    // adding some test comments
-    // some more comments
     @Autowired
     public MySQLTestService mySQLTestService;
     @PostMapping("/MySQL")
     public String test(@RequestBody TestModule testModule)
     {
-        return  mySQLTestService.save(testModule);
+        return  "modified return value";
     }
 }
