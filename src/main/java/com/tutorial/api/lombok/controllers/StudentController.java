@@ -1,5 +1,6 @@
 package com.tutorial.api.lombok.controllers;
 
+import com.tutorial.api.lombok.annotations.FirstAnno;
 import com.tutorial.api.lombok.modules.*;
 import com.tutorial.api.lombok.pojo.StudentPojo;
 import com.tutorial.api.lombok.services.StudentService;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Slf4j
 @RequestMapping("/Student")
+@FirstAnno(number = 10, gender = "Male", myName = "Preetam")
 public class StudentController {
     @Autowired
     public StudentService studentService;
@@ -60,4 +62,6 @@ public class StudentController {
     {
         return studentService.saveV(studentPojo);
     }
+
+
 }
