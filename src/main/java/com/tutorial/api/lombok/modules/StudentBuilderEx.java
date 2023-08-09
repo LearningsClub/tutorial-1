@@ -2,14 +2,11 @@ package com.tutorial.api.lombok.modules;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Builder;
 
 @Entity
-@Getter
-@Setter
-public class StudentGetterAndSetter {
-
+@Builder
+public class StudentBuilderEx {
     @Id
     private int id;
     private String firstName;

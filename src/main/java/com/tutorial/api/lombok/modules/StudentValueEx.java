@@ -2,15 +2,15 @@ package com.tutorial.api.lombok.modules;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.RequiredArgsConstructor;
+import lombok.Value;
 
 @Entity
-@RequiredArgsConstructor
-public class StudentRequiredArgsConstructor {
+@Value
+public class StudentValueEx {
     @Id
     private final int id;
     private final String firstName;
-    private String lastName;
+    private final String lastName;
     private final int rollNo;
     private final int mathsScore;
     private final int scienceScore;

@@ -7,9 +7,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MySQLTestService {
-    // private static final Logger log =
-    // LoggerFactory.getLogger(MySQLTestService.class);
 
+    //     private static final Logger log = LoggerFactory.getLogger(MySQLTestService.class);
     @Autowired
     public TestRepo testRepository;
 

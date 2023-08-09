@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 
 @Entity
 @AllArgsConstructor
-public class StudentAllArgsConstructor {
+public class StudentAllArgsConstructorEx {
     @Id
     private int id;
     private String firstName;
