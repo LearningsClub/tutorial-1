@@ -16,7 +16,7 @@ public class StudentController {
 
     // API to demonstrate @AllArgsConstructor Annotation
     @PostMapping("/AllArgsConstructor")
-    public StudentAllArgsConstructorEx save(@RequestBody StudentPojo studentPojo)
+    public StudentAllArgsConstructorEx save1(@RequestBody StudentPojo studentPojo)
     {
         return studentService.saveA(studentPojo);
     }

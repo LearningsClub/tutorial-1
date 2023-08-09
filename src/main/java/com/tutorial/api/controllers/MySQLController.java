@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class MySQLController {
     @Autowired
     public MySQLTestService mySQLTestService;
-    @PostMapping("/MySQL")
-    public String test(@RequestBody TestModule testModule)
-    {
-        return  "modified return value";
+
+    @PostMapping("/testMySQL")
+    public String test(@RequestBody TestModule testModule) {
+        return mySQLTestService.save(testModule);
     }
 }
