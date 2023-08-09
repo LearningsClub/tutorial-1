@@ -18,48 +18,42 @@ public class StudentController {
 
     // API to demonstrate @AllArgsConstructor Annotation
     @PostMapping("/AllArgsConstructor")
-    public StudentAllArgsConstructorEx save(@RequestBody StudentPojo studentPojo)
+    public StudentAllArgsConstructorEx save1(@RequestBody StudentPojo studentPojo)
     {
         return studentService.saveA(studentPojo);
     }
 
     // API to demonstrate @Builder Annotation
     @PostMapping("/Builder")
-    public StudentBuilderEx saveB(@RequestBody StudentPojo studentPojo)
-    {
+    public StudentBuilderEx saveB(@RequestBody StudentPojo studentPojo) {
         return studentService.saveB(studentPojo);
     }
 
     // API to demonstrate @Data Annotation
     @PostMapping("/Data")
-    public int saveD(@RequestBody StudentPojo studentPojo)
-    {
+    public int saveD(@RequestBody StudentPojo studentPojo) {
         return studentService.saveD(studentPojo);
     }
 
     // API to demonstrate @Builder Annotation
     @PostMapping("/GetterAndSetter")
-    public StudentGetterAndSetterEx saveGS(@RequestBody StudentPojo studentPojo)
-    {
+    public StudentGetterAndSetterEx saveGS(@RequestBody StudentPojo studentPojo) {
         return studentService.saveGS(studentPojo);
     }
 
     // API to demonstrate @Builder Annotation
     @PostMapping("/RequiredArgsConstructor")
-    public StudentRequiredArgsConstructorEx saveRAC(@RequestBody StudentPojo studentPojo)
-    {
+    public StudentRequiredArgsConstructorEx saveRAC(@RequestBody StudentPojo studentPojo) {
         return studentService.saveRAC(studentPojo);
     }
 
     @PostMapping("/ToString")
-    public String saveTS(@RequestBody StudentPojo studentPojo)
-    {
+    public String saveTS(@RequestBody StudentPojo studentPojo) {
         return studentService.saveTS(studentPojo);
     }
 
     @PostMapping("/Value")
-    public StudentValueEx saveV(@RequestBody StudentPojo studentPojo)
-    {
+    public StudentValueEx saveV(@RequestBody StudentPojo studentPojo) {
         return studentService.saveV(studentPojo);
     }
 

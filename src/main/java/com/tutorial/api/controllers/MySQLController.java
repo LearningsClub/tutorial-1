@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class MySQLTestController {
-
+public class MySQLController {
     @Autowired
     public MySQLTestService mySQLTestService;
+
     @PostMapping("/testMySQL")
-    public String test(@RequestBody TestModule testModule)
-    {
-        return  mySQLTestService.save(testModule);
+    public String test(@RequestBody TestModule testModule) {
+        return mySQLTestService.save(testModule);
     }
 }
