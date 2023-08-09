@@ -20,6 +20,11 @@ public class LombokService {
                 studentPojo.getLastName(), studentPojo.getRollNo(), studentPojo.getMathsScore(),
                 studentPojo.getScienceScore(), studentPojo.getEnglishScore());
 
+        log.info(studentValue.toString());
+
+        studentValue = new StudentValue(0, null, null, 0, 0, 0, 0);
+
+        log.info(studentValue.toString());
         // There is no method available for Updating the studentValue Object
         return studentValue;
     }

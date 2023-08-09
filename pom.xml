@@ -11,8 +11,8 @@
 	<groupId>com.tutorial-1</groupId>
 	<artifactId>tutorial-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>taxOrbitAPI</name>
-	<description>Simplifying ITR Filing</description>
+	<name>tutorial-1</name>
+	<description>A single repository to setup your fresh Java repository</description>
 	<properties>
 		<java.version>20</java.version>
 	</properties>
