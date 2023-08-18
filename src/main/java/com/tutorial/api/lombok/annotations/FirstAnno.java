@@ -8,7 +8,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface FirstAnno{
-
     int number();
     String myName() default "Vishal";
     String gender();

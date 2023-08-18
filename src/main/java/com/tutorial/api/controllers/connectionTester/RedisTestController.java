@@ -1,4 +1,4 @@
-package com.tutorial.api.controllers;
+package com.tutorial.api.controllers.connectionTester;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

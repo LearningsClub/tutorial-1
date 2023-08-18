@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RequestMapping("/Student")
 @FirstAnno(number = 10, gender = "Male", myName = "Preetam")
-public class StudentController {
+public class StudentLombokController {
     @Autowired
     public StudentService studentService;
 

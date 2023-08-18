@@ -1,4 +1,4 @@
-package com.tutorial.api.controllers;
+package com.tutorial.api.controllers.connectionTester;
 
 import com.tutorial.api.modules.TestModule;
 import com.tutorial.api.services.MySQLTestService;
